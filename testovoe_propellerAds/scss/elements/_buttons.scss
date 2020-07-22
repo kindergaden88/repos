@@ -1,0 +1,66 @@
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	&-col {
+		display: flex;
+		width: max-content;
+		flex: auto;
+	}
+	&-icon {
+		border: none;
+		width: 40px;
+		height: 40px;
+		margin: 0 15px;
+		cursor: pointer;
+		transition: .4s all ease;
+		&:hover {
+			opacity: 0.75;
+		}
+		@media all and (max-width : 425px) {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	&-wrap {
+		height: 40px;
+		@media all and (max-width : 425px) {
+			height: 20px;
+		}
+		&--sound {
+			&.visible {
+				.buttons-sound-on {
+					display: block;
+				}
+				.buttons-sound-off {
+					display: none;
+				}
+			}
+		}
+	}
+	&-play {
+		background: url("../img/play-button-2.svg") center center no-repeat;
+		background-size: cover;
+		&:fullscreen {
+			background: url("../img/play-button-2.svg") center center no-repeat;
+			background-size: cover;
+		}
+	}
+	&-pause {
+		display: none;
+		background: url("../img/pause.svg") center center no-repeat;
+		background-size: cover;
+	}
+	&-sound-on {
+		display: none;
+		background: url("../img/audio-speaker-on.svg") center center no-repeat;
+		background-size: cover;
+	}
+	&-sound-off {
+		background: url("../img/volume-off-indicator.svg") center center no-repeat;
+		background-size: cover;
+	}
+	&-fullscreen {
+		background: url("../img/full-screen.svg") center center no-repeat;
+		background-size: cover;
+	}
+}

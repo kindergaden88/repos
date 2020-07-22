@@ -1,0 +1,62 @@
+.player {
+	position: relative;
+	max-width: 800px;
+	width: 100%;
+	margin: 40px auto;
+	border: 1px solid grey;
+	&-wrap {
+		position: relative;
+	}
+	&-progress {
+		width: 100%;
+	}
+	&-video {
+		max-width: 800px;
+		width: 100%;
+		&:fullscreen {
+			position: relative!important;
+			z-index: -2!important;
+		}
+		&::-webkit-media-controls {
+			display:none !important;
+		}
+	}
+	&-play {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 45%;
+		left: 45%;
+		background: url("../img/play-button.svg") center center no-repeat;
+		background-size: cover;
+		cursor: pointer;
+		border: none;
+		transition: .4s all ease;
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+	&-controls {
+		z-index: 2147483647;
+		padding: 10px 0;
+	}
+	&-track {
+		margin-top: -20px;
+		margin-bottom: 10px;
+		z-index: 1;
+		position: relative;
+		&-range {
+			display: none;
+			width: 100%;
+			margin: 0;
+		}
+	}
+	&.visible {
+		.buttons-play {
+			display: none;
+		}
+		.buttons-pause {
+			display: block;
+		}
+	}
+}

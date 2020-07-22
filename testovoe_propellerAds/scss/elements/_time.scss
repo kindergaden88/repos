@@ -1,0 +1,8 @@
+.time {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	@media all and (max-width : 425px) {
+		font-size: 18px;
+	}
+}

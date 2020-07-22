@@ -13,37 +13,43 @@
 <div class="player">
 	<form class="popup" id="popUp">
 		<div class="popup-wrap">
-			<p class="popup-text">
+			<p class="popup-lang">
+				<span class="popup-lang-btn popup-lang-ru">Ru</span>
+				<span class="popup-lang-btn popup-lang-en">En</span>
+			</p>
+			<p class="popup-text popup-text--ru">
 				Для продолжения просмотра<br> нужно пройти регистрацию
 			</p>
-			<input type="email" class="popup-input" id="email" placeholder="example@mail.com">
+			<p class="popup-text popup-text--en">
+				To continue viewing<br> you need to register
+			</p>
+			<input type="email" class="popup-input popup-input--email" placeholder="example@mail.com">
 			<button type="button" class="popup-btn">OK</button>
 		</div>
 	</form>
 	<div class="player-wrap">
-		<video class="player-video" id="videoPlayer">
+		<video class="player-video">
 			<source src="video/videoplayback.mp4" type="video/mp4">
 		</video>
-		<button class="player-play"  class="player-play"></button>
+		<button class="player-play buttons-play playPause"></button>
 	</div>
 	<div class="player-controls">
 		<div class="player-track">
-			<input type="range" id="timeLine" value="0" step="1" max="100" class="player-track-range">
-			<progress value="0" max="100" id="progress" class="player-progress"></progress>
+			<progress value="0" max="100" class="player-progress"></progress>
 		</div>
 		<div class="buttons">
 			<div class="buttons-col">
 				<div class="buttons-wrap">
-					<button class="buttons-play buttons-icon" id="play"></button>
-					<button class="buttons-pause buttons-icon" id="pause"></button>
+					<button class="buttons-play playPause buttons-icon"></button>
+					<button class="buttons-pause playPause buttons-icon"></button>
 				</div>
-				<div class="buttons-wrap">
-					<button class="buttons-sound-on buttons-icon" id="soundOn"></button>
-					<button class="buttons-sound-off buttons-icon" id="soundOff"></button>
+				<div class="buttons-wrap buttons-wrap--sound">
+					<button class="buttons-sound buttons-sound-on buttons-icon"></button>
+					<button class="buttons-sound buttons-sound-off buttons-icon"></button>
 				</div>
 				<div class="time">
-					<span class="time-second time-second-start" id="outTime"></span>/
-					<span class="time-second time-second-end" id="fullTime"></span>
+					<span class="time-second time-second-start"></span>/
+					<span class="time-second time-second-end"></span>
 				</div>
 			</div>
 			<button class="buttons-fullscreen buttons-icon" id="fullScreen"></button>
@@ -51,7 +57,7 @@
 	</div>
 </div>
 
-<script src="js/js.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

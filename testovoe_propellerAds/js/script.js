@@ -1,6 +1,5 @@
 document.querySelector('.player').onclick = playPause;
 document.querySelector('.buttons-wrap--sound').onclick = soundOnOff;
-document.querySelector('.buttons-wrap--sound').onclick = soundOnOff;
 
 const video = document.querySelector('.player-video'),
     progress = document.querySelector('.player-progress'),

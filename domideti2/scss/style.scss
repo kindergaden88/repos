@@ -1,6 +1,10 @@
 @import "bootstrap";
+@import "el/el";
 @import "section/header";
+@import "section/main";
+@import "section/footer";
 
 body {
 	font-size: 1rem;
+	color: #452c2c;
 }

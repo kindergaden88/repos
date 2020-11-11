@@ -1,0 +1,50 @@
+.main {
+    padding: 6rem 0;
+    .column {
+        .text {
+            max-width: 1000px;
+        }
+    }
+    &-info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        &-img {
+            max-width: 180px;
+            margin-left: 4rem;
+        }
+    }
+    &-program {
+        display: flex;
+        flex-direction: column;
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        &-check {
+            max-width: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+    &-application {
+        align-items: flex-start;
+    }
+    &-child {
+        padding: 4rem 0 0;
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .caption {
+            padding-bottom: 0;
+            font-size: 2rem;
+        }
+        &-img {
+            max-width: 200px;
+            margin-right: 2rem;
+        }
+    }
+}

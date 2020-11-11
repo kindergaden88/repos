@@ -1,0 +1,13 @@
+.link {
+    margin-bottom: 1rem;
+    color: #003966;
+    font-size: 1.5rem;
+    opacity: .8;
+    transition: .4s all ease-in-out;
+    &-img {
+        max-width: 50px;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
